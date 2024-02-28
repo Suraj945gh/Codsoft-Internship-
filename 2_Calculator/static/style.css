@@ -1,0 +1,69 @@
+body{
+    background-color: #070F2B;
+    height: 100%;
+    width: 100%;
+}
+.container {
+    width: 60%;
+    height: 103vh;
+    display: inline-block;
+    background-color: #535C91;
+    margin-top: 1rem;
+    margin-left: 20%;
+    border: 4px solid white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5vw;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: White;
+}
+
+.input{
+    height: 6rem;
+    width: 50rem;
+    background-color: #9290C3;
+    color: #070F2B;
+    font-weight: 900;
+    font-size: 1.35rem;
+    text-align: center;
+    display: block;
+    margin: 1em 6em
+    
+}
+.submitbutton{
+    height: 6rem;
+    width: 15rem;
+    background-color: #9290C3;
+    color: #070F2B;
+    font-weight: 900;
+    font-size: 1.35rem;
+    text-align: center;
+    display: block;
+    margin: 1em 19em    
+}
+.text_inputs{
+    background-color: #535C91;
+    align-items: center;
+}  
+
+.predict{
+    color: white;
+    font-size: 50px;
+    margin-left: 200px;
+    height: 100px;
+    width: 650px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.footer-text{
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+}

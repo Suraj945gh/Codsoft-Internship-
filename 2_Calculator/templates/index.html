@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Basic Calculator</h1><hr color="white"/>
+      <div class="text_inputs">
+        <form action="{{ url_for('predict')}}" method="post">
+          <input name="num1" placeholder="Enter the first number" type="text" class="input" id="num1" required="required"/>
+          <input name="num2" placeholder="Enter the second number" type="text" class="input" id="num2" required="required"/>
+          <input name="op" placeholder="add / sub / mul / divide / mod" type="text" class="input" required="required" />
+          <button type="submit" class="submitbutton">CALCULATE !</button>
+      
+          <div class="predict">
+            {{ prediction_text }}
+          </div>
+      </form>    
+      </div>
+    </div>
+    <footer>
+      <p class="footer-text">Made with ❤ by Suraj</p>
+    </footer>
+  </body>
+</html>
